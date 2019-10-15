@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout1" >
+        <TextView
+        <TextView
+            android:text="Hello"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <ImageView
+            android:src="@drawable/monkey"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView1" />
+        <android.support.v7.widget.Toolbar
+            android:background="@android:color/holo_red_light"
+            android:minWidth="25px"
+            android:minHeight="25px"
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar1">
+            <TextView
+                android:text="Photo Editing"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+            <ImageButton
+                android:src="@drawable/ic_action_content_create"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:id="@+id/imageButton1" 
+                android:onClick="OnButtonClickedButton1"
+                />
+            <ImageButton
+                android:src="@drawable/ic_action_content_undo"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:id="@+id/imageButton2" 
+                android:onClick="OnButtonClickedButton2"/>
+            <ImageButton
+                android:src="@drawable/ic_action_content_redo"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:id="@+id/imageButton3" 
+                android:onClick="OnButtonClickedButton3"/>
+            <ImageButton
+                android:src="@drawable/ic_action_content_save"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:id="@+id/imageButton4"
+                android:onClick="OnButtonClickedButton4"/>
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
